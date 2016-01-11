@@ -1,0 +1,5 @@
+<h1>Edit your item!</h1>
+
+<%= render 'form' %>
+
+<%= link_to "Retire Item", {controller: "admin/items", action: "update", status: "retire" } , :method=>:put  %>

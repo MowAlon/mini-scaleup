@@ -1,0 +1,9 @@
+<div class="page-header">
+  <h1><%= @borrower.name %>'s Projects</h1>
+</div>
+
+<% if this_borrower? %>
+  <%= render "borrower_show" %>
+<% else %>
+  <%= render "lender_show" %>
+<% end %>

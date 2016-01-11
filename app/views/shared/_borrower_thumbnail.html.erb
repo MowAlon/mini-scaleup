@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <% @loan_requests.each do |loan_request| %>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+      <div class="thumbnail">
+        <img src=<%=loan_request.image_url %>  alt="...">
+        <div class="caption">
+          <div class="thumbnail-label">
+            <h3><%= truncate(loan_request.title, length: 20) %></h3>
+          </div>
+          <p><%= truncate(loan_request.description, length: 30) %></p>
+          <p>
+            <%= link_to "Details", loan_request_path(loan_request), class: "btn btn-default" %>
+            <%= link_to "Edit", edit_loan_request_path(loan_request), remote: true, class: "btn btn-info pull-right" %>
+          </p>
+          <br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:<%="#{loan_request.progress_percentage}"%>%;">
+                <%="#{loan_request.progress_percentage}%"%>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>

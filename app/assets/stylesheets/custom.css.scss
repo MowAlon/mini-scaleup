@@ -1,0 +1,257 @@
+$primary-color: #fff;
+$hover-color: #fed136;
+$muted: #777;
+
+
+body {
+  padding-top: 50px;
+}
+
+.alert {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+header div h2 {
+  font-size: 40px;
+}
+
+.overlay {
+  background: transparent;
+  position: relative;
+  width:100%;
+  height:500px; /* your iframe height */
+  top:500px;  /* your iframe height */
+  margin-top:-500px;  /* your iframe height */
+}
+
+#team {
+  padding: 50px 0;
+}
+
+.bg-light-gray {
+  background-color: $primary-color;
+}
+
+
+.page-header {
+  text-align: center;
+}
+
+.thumbnail > img {
+  width:100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  background-color: $primary-color !important;
+}
+
+.thumbnail-label {
+  text-align: center;
+}
+
+.progress {
+  background-color: $primary-color !important;
+}
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.text-muted {
+  color: $muted;
+}
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid $primary-color;
+  width: 175px;
+}
+
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: $primary-color;
+  background-color: #222;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: $hover-color;
+}
+
+p.large {
+  font-size: 16px;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: $primary-color;
+  padding-top: 100px;
+
+}
+
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+  color: $muted;
+}
+
+/* Custom Button Styles */
+
+.btn-xlarge {
+  padding: 18px 28px;
+  font-size: 22px;
+  line-height: normal;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.btn-ghost {
+  color: $primary-color !important;
+  background-color: rgba(0,0,0,0) !important;
+  border: 2px solid $primary-color !important;
+  font-weight: bold;
+  border-radius: 0 !important;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost:active {
+  color: $hover-color !important;
+  border: 2px solid $hover-color !important;
+  text-decoration: none;
+}
+
+.btn-light {
+  border-radius: 0;
+  color: $muted;
+  background-color: rgba(0,0,0,0);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+  max-width: 100px;
+}
+
+/* Header */
+
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: image-url('http://blog.oxfamamerica.org.s3.amazonaws.com/politicsofpoverty/2014/07/OUS_27376_File0230-lpr.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+  padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+  padding: 50px 0;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+/* Call to Action */
+
+.call-to-action {
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+  overflow: hidden;
+}
+
+@media(max-width:768px) {
+  .map {
+    height: 75%;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+}
+
+.cart-button {
+  padding: 10px;
+  margin-right: 10px;
+}

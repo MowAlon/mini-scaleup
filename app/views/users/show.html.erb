@@ -1,0 +1,9 @@
+<h1 id="banner"> Welcome, <% if current_user %>
+  <% if current_user.display_name %>
+    <%= current_user.display_name %>.
+  <% else %>
+    <%=current_user.full_name %>.
+  <% end %>
+<% end %>
+
+</h1>
